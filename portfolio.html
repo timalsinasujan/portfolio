@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujan Timalsina | High-CTR Thumbnail Designer</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font (default) and the custom background color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-bg': '#edf9ff', // Your requested background color
+                        'accent-blue': '#1e40af', // A deep blue for accents (Primary Brand Color)
+                        'accent-light': '#3b82f6', // A lighter blue for buttons/hovers
+                        'text-dark': '#1f2937', // Near-black for main text
+                        'text-medium': '#4b5563', // Dark gray for body text
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Load Lucide Icons for social links and navigation -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom styles for smooth scrolling and clean text selection */
+        html {
+            scroll-behavior: smooth;
+        }
+        ::selection {
+            background-color: #3b82f6;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<!-- Main body uses your specified background color -->
+<body class="bg-primary-bg text-text-medium font-sans">
+
+    <!-- NAVIGATION BAR -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo/Name Section -->
+                <a href="#home" class="flex items-center space-x-3">
+                    <!-- NOTE: Placeholder for your 'logo00.png'. Using text fallback. -->
+                   <div class="h-10 w-10 flex items-center justify-center bg-accent-blue text-white font-black text-lg rounded-full shadow-md">
+    <img src="logo00.png" alt="User Logo" class="h-full w-full object-cover rounded-full" />
+</div>
+                    <span class="text-xl font-extrabold text-text-dark">Sujan Timalsina</span>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-text-medium hover:text-accent-blue transition duration-150 font-medium">About</a>
+                    <a href="#work" class="text-text-medium hover:text-accent-blue transition duration-150 font-medium">Work</a>
+                    <a href="#clients" class="text-text-medium hover:text-accent-blue transition duration-150 font-medium">Clients</a>
+                    <a href="#contact" class="px-5 py-2 bg-accent-blue text-white rounded-lg shadow-md hover:bg-accent-light transition duration-150 font-semibold">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg text-text-medium hover:bg-gray-100 transition duration-150" aria-label="Toggle Menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay (JS handles hidden/visible) -->
+        <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-white/95 backdrop-blur-sm border-t border-gray-100 shadow-xl">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-text-medium hover:bg-gray-50">About</a>
+                <a href="#work" class="block px-3 py-2 rounded-md text-base font-medium text-text-medium hover:bg-gray-50">Work</a>
+                <a href="#clients" class="block px-3 py-2 rounded-md text-base font-medium text-text-medium hover:bg-gray-50">Clients</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-accent-blue hover:bg-accent-light mt-2">Contact Me</a>
+            </div>
+        </div>
+    </header>
+    <!-- END NAVIGATION BAR -->
+
+    <main>
+        <!-- HERO SECTION (Size and Text Updated) -->
+        <section id="home" class="py-24 md:py-48 flex items-center min-h-[calc(100vh-80px)]">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <!-- Experience Tag -->
+                <p class="text-lg font-semibold text-accent-light uppercase tracking-widest mb-4">
+                    4 Years | High-CTR Thumbnail Designer
+                </p>
+                
+                <!-- Main Title (Reduced size and updated text) -->
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-text-dark leading-snug mb-6">
+                    Designing Magical Thumbnails That <span class="text-accent-blue">Stops Scrolling</span>.
+                </h1>
+                
+                <!-- Subtext -->
+                <p class="text-xl text-text-medium max-w-2xl mx-auto">
+                    I partner with top creators and gamers in Nepal to engineer strategic, high-converting thumbnail designs that maximize views and audience engagement.
+                </p>
+                
+                <!-- CTA Buttons -->
+                <div class="flex justify-center space-x-4 pt-8">
+                    <a href="#work" class="px-10 py-3 bg-accent-blue text-white font-bold rounded-xl shadow-xl hover:bg-accent-light transition duration-300 transform hover:scale-[1.03] border-b-4 border-accent-blue/50">
+                        View Portfolio
+                    </a>
+                    <a href="#contact" class="px-10 py-3 bg-white border-2 border-accent-blue text-accent-blue font-bold rounded-xl shadow-xl hover:bg-gray-50 transition duration-300 transform hover:shadow-2xl">
+                        Start a Project
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- END HERO SECTION -->
+
+        <!-- ABOUT / EXPERIENCE SECTION -->
+        <section id="about" class="py-16 md:py-24 bg-white shadow-inner">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-text-dark">My Expertise & Approach</h2>
+                    <p class="mt-4 text-xl text-text-medium">The secret sauce behind 200 Million+ views.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Expertise Card 1: High CTR Focus -->
+                    <div class="p-8 bg-primary-bg rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl hover:scale-[1.01] transition duration-300 transform">
+                        <i data-lucide="eye" class="w-10 h-10 text-accent-blue mb-4"></i>
+                        <h3 class="text-2xl font-bold text-text-dark mb-2">Conversion-Centric Design</h3>
+                        <p class="text-text-medium">
+                            My focus is strictly on **Click-Through-Rate (CTR)**. I don't just make pretty pictures; I engineer visual hooks that compel viewers to click, maximizing your video's potential.
+                        </p>
+                    </div>
+
+                    <!-- Expertise Card 2: Market Insight -->
+                    <div class="p-8 bg-primary-bg rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl hover:scale-[1.01] transition duration-300 transform">
+                        <i data-lucide="trending-up" class="w-10 h-10 text-accent-blue mb-4"></i>
+                        <h3 class="text-2xl font-bold text-text-dark mb-2">Niche Mastery (Gaming & Creators)</h3>
+                        <p class="text-text-medium">
+                            Deep understanding of the Nepali and international gaming/creator YouTube landscape. I know what colors, faces, and text formats drive engagement in these specific markets.
+                        </p>
+                    </div>
+
+                    <!-- Expertise Card 3: Collaborative Process -->
+                    <div class="p-8 bg-primary-bg rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl hover:scale-[1.01] transition duration-300 transform">
+                        <i data-lucide="zap" class="w-10 h-10 text-accent-blue mb-4"></i>
+                        <h3 class="text-2xl font-bold text-text-dark mb-2">Fast, Flexible, and Reliable</h3>
+                        <p class="text-text-medium">
+                            I integrate seamlessly into your content workflow, offering quick turnarounds and iterative edits until the design is a perfect fit for your video's content and marketing goal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END ABOUT / EXPERIENCE SECTION -->
+
+        <!-- PORTFOLIO / WORK SHOWCASE SECTION (Under Construction) -->
+        <section id="work" class="py-16 md:py-24">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="bg-white p-10 rounded-2xl shadow-2xl border-4 border-accent-blue/50">
+                    <i data-lucide="wrench" class="w-16 h-16 text-accent-blue mx-auto mb-6 animate-pulse"></i>
+                    <h2 class="text-4xl font-extrabold text-text-dark mb-4">Portfolio Under Construction</h2>
+                    <p class="mt-4 text-xl text-text-medium mb-8">
+                        My personal work showcase is currently being updated. For immediate samples and hiring details, please view my verified profile below!
+                    </p>
+                    <!-- Button to YT Jobs Link -->
+                    <a href="https://ytjobs.co/talent/vitrine/428100" target="_blank" class="inline-flex items-center space-x-2 px-8 py-3 bg-red-600 text-white font-bold rounded-xl shadow-lg hover:bg-red-700 transition duration-300 transform hover:scale-[1.05]">
+                        <i data-lucide="briefcase" class="w-5 h-5"></i>
+                        <span>View My YT Jobs Profile</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- END PORTFOLIO / WORK SHOWCASE SECTION -->
+
+        <!-- CLIENTS / PARTNERS SECTION (Updated with YouTube Channels) -->
+        <section id="clients" class="py-16 md:py-24 bg-white shadow-inner">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-text-dark">My Top Clients & Partners</h2>
+                    <p class="mt-4 text-xl text-text-medium">Partnerships that resulted in over 200,000,000 video views.</p>
+                </div>
+
+                <!-- Client Logo Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 items-center justify-items-center">
+                    
+                    <!-- Client 1: Tonde Gamer -->
+                    <a href="https://youtube.com/@tondegamer?si=3DUL4hjLXXqeK0kR" target="_blank" class="p-4 bg-primary-bg rounded-xl shadow-lg w-full max-w-[150px] aspect-square flex flex-col items-center justify-center hover:shadow-2xl hover:scale-[1.05] transition duration-300 transform border-2 border-transparent hover:border-red-600/50">
+                        <i data-lucide="youtube" class="w-8 h-8 text-red-600 mb-2"></i>
+                        <p class="text-base font-bold text-text-dark text-center leading-tight">Tonde Gamer</p>
+                    </a>
+
+                    <!-- Client 2: Laka gaming -->
+                    <a href="https://www.youtube.com/@LakaGamingz" target="_blank" class="p-4 bg-primary-bg rounded-xl shadow-lg w-full max-w-[150px] aspect-square flex flex-col items-center justify-center hover:shadow-2xl hover:scale-[1.05] transition duration-300 transform border-2 border-transparent hover:border-red-600/50">
+                        <i data-lucide="youtube" class="w-8 h-8 text-red-600 mb-2"></i>
+                        <p class="text-base font-bold text-text-dark text-center leading-tight">Laka gaming</p>
+                    </a>
+                    
+                    <!-- Client 3: ABHISHEK YT -->
+                    <a href="https://youtube.com/@-abhishek_yt?si=O20L3SXT_rIzxWqv" target="_blank" class="p-4 bg-primary-bg rounded-xl shadow-lg w-full max-w-[150px] aspect-square flex flex-col items-center justify-center hover:shadow-2xl hover:scale-[1.05] transition duration-300 transform border-2 border-transparent hover:border-red-600/50">
+                        <i data-lucide="youtube" class="w-8 h-8 text-red-600 mb-2"></i>
+                        <p class="text-base font-bold text-text-dark text-center leading-tight">ABHISHEK YT</p>
+                    </a>
+                    
+                    <!-- Client 4: chunu vlogs -->
+                    <a href="https://www.youtube.com/@Chunuvlogs" target="_blank" class="p-4 bg-primary-bg rounded-xl shadow-lg w-full max-w-[150px] aspect-square flex flex-col items-center justify-center hover:shadow-2xl hover:scale-[1.05] transition duration-300 transform border-2 border-transparent hover:border-red-600/50">
+                        <i data-lucide="youtube" class="w-8 h-8 text-red-600 mb-2"></i>
+                        <p class="text-base font-bold text-text-dark text-center leading-tight">chunu vlogs</p>
+                    </a>
+
+                    <!-- Client 5: ZEROTH YT -->
+                    <a href="https://www.youtube.com/@zerothyt10" target="_blank" class="p-4 bg-primary-bg rounded-xl shadow-lg w-full max-w-[150px] aspect-square flex flex-col items-center justify-center hover:shadow-2xl hover:scale-[1.05] transition duration-300 transform border-2 border-transparent hover:border-red-600/50">
+                        <i data-lucide="youtube" class="w-8 h-8 text-red-600 mb-2"></i>
+                        <p class="text-base font-bold text-text-dark text-center leading-tight">ZEROTH YT</p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!-- END CLIENTS / PARTNERS SECTION -->
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-16 md:py-24">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-text-dark">Ready to Boost Your Views?</h2>
+                    <p class="mt-4 text-xl text-text-medium">Let's connect and discuss your next high-performing thumbnail strategy.</p>
+                </div>
+
+                <!-- Contact Card -->
+                <div class="p-8 bg-white rounded-3xl shadow-2xl border-4 border-accent-blue/20">
+                    <h3 class="text-3xl font-bold text-text-dark mb-8 text-center">Let's Talk Business</h3>
+                    
+                    <!-- Social Links Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        
+                        <!-- 1. WhatsApp -->
+                        <a href="https://wa.link/rbuumc" target="_blank" class="flex items-center space-x-4 p-4 rounded-xl border border-gray-200 hover:border-green-500 hover:shadow-lg transition duration-300 group">
+                            <i data-lucide="message-square-text" class="w-6 h-6 text-green-600 group-hover:scale-110 transition duration-300"></i>
+                            <div>
+                                <p class="font-bold text-text-dark">Quick Chat (WhatsApp)</p>
+                                <p class="text-sm text-gray-500">wa.link/rbuumc</p>
+                            </div>
+                        </a>
+
+                        <!-- 2. Gmail -->
+                        <a href="mailto:smarttechzbusiness@gmail.com" class="flex items-center space-x-4 p-4 rounded-xl border border-gray-200 hover:border-red-500 hover:shadow-lg transition duration-300 group">
+                            <i data-lucide="mail" class="w-6 h-6 text-red-600 group-hover:scale-110 transition duration-300"></i>
+                            <div>
+                                <p class="font-bold text-text-dark">Project Inquiries (Gmail)</p>
+                                <p class="text-sm text-gray-500">smarttechzbusiness@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <!-- 3. Instagram -->
+                        <a href="https://www.instagram.com/su_jan_timalsina/?__pwa=1" target="_blank" class="flex items-center space-x-4 p-4 rounded-xl border border-gray-200 hover:border-pink-500 hover:shadow-lg transition duration-300 group">
+                            <i data-lucide="instagram" class="w-6 h-6 text-pink-600 group-hover:scale-110 transition duration-300"></i>
+                            <div>
+                                <p class="font-bold text-text-dark">Connect (Instagram)</p>
+                                <p class="text-sm text-gray-500">@su_jan_timalsina</p>
+                            </div>
+                        </a>
+
+                        <!-- 4. Facebook -->
+                        <a href="https://www.facebook.com/sujantimalsina.9" target="_blank" class="flex items-center space-x-4 p-4 rounded-xl border border-gray-200 hover:border-blue-600 hover:shadow-lg transition duration-300 group">
+                            <i data-lucide="facebook" class="w-6 h-6 text-blue-600 group-hover:scale-110 transition duration-300"></i>
+                            <div>
+                                <p class="font-bold text-text-dark">Updates (Facebook)</p>
+                                <p class="text-sm text-gray-500">Profile Link</p>
+                            </div>
+                        </a>
+
+                        <!-- 5. LinkedIn -->
+                        <a href="https://www.linkedin.com/in/sujan-timalsina-bb8556321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="flex items-center space-x-4 p-4 rounded-xl border border-gray-200 hover:border-blue-800 hover:shadow-lg transition duration-300 group">
+                            <i data-lucide="linkedin" class="w-6 h-6 text-blue-800 group-hover:scale-110 transition duration-300"></i>
+                            <div>
+                                <p class="font-bold text-text-dark">Professional (LinkedIn)</p>
+                                <p class="text-sm text-gray-500">Sujan Timalsina</p>
+                            </div>
+                        </a>
+
+                        <!-- 6. Portfolio Link (Now points to YT Jobs Link) -->
+                        <a href="https://ytjobs.co/talent/vitrine/428100" target="_blank" class="flex items-center space-x-4 p-4 rounded-xl border border-gray-200 hover:border-red-600 hover:shadow-lg transition duration-300 group bg-red-600/10">
+                            <i data-lucide="briefcase" class="w-6 h-6 text-red-600 group-hover:scale-110 transition duration-300"></i>
+                            <div>
+                                <p class="font-bold text-text-dark">Hiring Details (YT Jobs)</p>
+                                <p class="text-sm text-gray-500">View Profile</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- End Social Links Grid -->
+                </div>
+            </div>
+        </section>
+        <!-- END CONTACT SECTION -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-gray-400">&copy; <span id="current-year"></span> Sujan Timalsina. All rights reserved.</p>
+            <p class="text-xs mt-2 text-gray-500">Designed with passion and focused on results.</p>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- JAVASCRIPT FOR FUNCTIONALITY AND ICONS -->
+    <script>
+        // 1. Initialize Lucide Icons (This converts data-lucide attributes into SVG icons)
+        lucide.createIcons();
+
+        // 2. Mobile Menu Toggle Functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        mobileMenuButton.addEventListener('click', toggleMobileMenu);
+
+        // Close menu when a link is clicked (for better mobile UX)
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // 3. Set Current Year in Footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
